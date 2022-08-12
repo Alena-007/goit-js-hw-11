@@ -12,39 +12,45 @@
 
 .container {
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .search-form {
   position: relative;
-  text-align: center;
-  width: 100%;
-  z-index: 1;
+  width: 500px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .search-input {
-  padding-left: 10px;
-  padding-right: 10px;
+  width: 100%;
+  height: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   outline: none;
   font-size: 20px;
-  width: 500px;
-  height: 40px;
-  border: 3px solid rgb(225, 225, 225);
-  border-radius: 4px;
 }
 
 .search-btn {
-  background-color: transparent;
-  height: 40px;
-  border: none;
-  border-radius: 4px;
-  display: block;
   position: absolute;
   top: 0;
-  right: 685px;
+  right: 0;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 4px;
+  border: transparent;
   cursor: pointer;
 }
 
