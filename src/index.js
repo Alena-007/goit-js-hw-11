@@ -19,6 +19,7 @@ loadMoreBtn.classList.add('is-hidden');
 function onSearch(e) {
   e.preventDefault();
   galleryEl.innerHTML = '';
+  loadMoreBtn.classList.remove('is-hidden');
   page = 1;
   request = inputEl.value.trim();
 
@@ -35,6 +36,7 @@ function onSearch(e) {
           insertGallery(data.hits);
           Notify.success(`Hooray! We found ${data.totalHits} images.`);
           simpleLightBox = new SimpleLightbox('.gallery a').refresh();
+          loadMoreBtn.classList.remove('is-hidden');
         }
       })
       .catch(error => console.log(error));
@@ -54,7 +56,6 @@ function onLoadMore() {
         );
       } else insertGallery(data.hits);
       simpleLightBox = new SimpleLightbox('.gallery a').refresh();
-      loadMoreBtn.classList.remove('is-hidden');
     })
     .catch(error => console.log(error));
 }
