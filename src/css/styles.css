@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-header {
+.header {
   height: 80px;
   background-color: #3007a1;
   margin-bottom: 20px;
@@ -25,7 +25,7 @@ header {
   z-index: 1;
 }
 
-.search-form input {
+.search-input {
   padding-left: 10px;
   padding-right: 10px;
   outline: none;
@@ -36,7 +36,7 @@ header {
   border-radius: 4px;
 }
 
-.search-form button {
+.search-btn {
   background-color: transparent;
   height: 45px;
   border: none;
@@ -105,7 +105,7 @@ header {
   display: none;
 }
 
-footer {
+.footer {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
