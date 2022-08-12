@@ -3,6 +3,7 @@ import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
+let simpleLightBox;
 let request = '';
 let page = 1;
 const perPage = 40;
