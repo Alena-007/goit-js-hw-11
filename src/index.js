@@ -19,7 +19,6 @@ loadMoreBtn.classList.add('is-hidden');
 function onSearch(e) {
   e.preventDefault();
   galleryEl.innerHTML = '';
-  loadMoreBtn.classList.remove('is-hidden');
   page = 1;
   request = inputEl.value.trim();
 
