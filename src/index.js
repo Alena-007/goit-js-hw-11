@@ -35,7 +35,6 @@ function onSearch(e) {
           insertGallery(data.hits);
           Notify.success(`Hooray! We found ${data.totalHits} images.`);
           simpleLightBox = new SimpleLightbox('.gallery a').refresh();
-          loadMoreBtn.classList.remove('is-hidden');
         }
       })
       .catch(error => console.log(error));
